@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="../css/signup.css">
+
+<head>
+  <link rel="shortcut icon" href="../pic/Logo laundry 03.png" type="image/x-icon">
+  <title>Laundry</title>
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <div class="singup-box">
+    <div class="singup-box-top">
+      <img class="singup-box-top-logo" src="../pic/animation03.gif" alt="">
+      <label class="singup-box-top-title" for="">Laundry</label>
+    </div>
+
+    <div class="singup-box-mid">
+      <form class="singup">
+				<div class="singup-field">
+					<img class="singup-icon" src="../pic/user icon.png" alt="">
+					<input type="text" class="singup-input" placeholder="User name" id="usn" required><br>
+          <label class="alert" id="alertuser" for="">*do not empty</label>
+				</div>
+        <div class="singup-field">
+          <img class="singup-icon" src="../pic/email.png" alt="">
+          <input type="text" class="singup-input" placeholder="Email" id="em" required><br>
+          <label class="alert" id="alertemail" for="">*do not empty</label>
+        </div>
+				<div class="singup-field">
+					<img class="singup-icon" src="../pic/3596115.png" alt="">
+					<input type="password" class="singup-input" placeholder="Password" id="pswd" required><br>
+          <label class="alert" id="alertpass" for="">*use 8-12digit</label>
+				</div>
+        <div class="singup-field">
+          <img class="singup-icon" src="../pic/phone.png" alt="">
+          <input type="text" class="singup-input" placeholder="Phone" id="pho" required><br>
+          <label class="alert" id="alertphone" for="">*do not empty</label>
+        </div>
+			</form>
+    </div>
+
+    <div class="singup-box-btm">
+      <button  class="singup-button" onclick="checkAddress()">SING UP</button>
+      
+    </div>
+
+  </div>
+
+  
+
+
+
+  <script>
+    function checkAddress(field){
+      var pass = document.getElementById("pswd").value;
+      var username = document.getElementById("usn").value;
+      var email = document.getElementById("em").value;
+      var phone = document.getElementById("pho").value;
+      
+      var usernamelength = username.length;
+      var emaillength = email.length;
+      var passlength = pass.length;
+      var phonelength = phone.length;
+
+      
+      if(usernamelength === 0){
+        document.getElementById("alertuser").style.visibility = "visible";
+      }else{
+        document.getElementById("alertuser").style.visibility = "hidden";
+      }
+      if(emaillength === 0){
+        document.getElementById("alertemail").style.visibility = "visible";
+      }else{
+        document.getElementById("alertemail").style.visibility = "hidden";
+      }
+      if(phonelength === 0){
+        document.getElementById("alertphone").style.visibility = "visible";
+      }else{
+        document.getElementById("alertphone").style.visibility = "hidden";
+      }
+        
+      
+
+
+      if(passlength < 8 || passlength > 12){
+        document.getElementById("alertpass").style.visibility = "visible";
+        //alert("aa");
+      }
+      else{
+        document.getElementById("alertpass").style.visibility = "hidden";
+        
+      }
+     
+      
+    }
+  </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,152 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+.bg {
+  background-image: url(../pic/backgound\ v.2.png);
+  scale: 105% ;
+  /* Add the blur effect */
+  filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  width: 100%;
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-box{
+    background-color: rgba(255,255,255, 70%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 500px;
+    /* border: 1px solid black; */
+    border-radius: 80px;
+
+    
+}
+
+.login-box-top{
+
+    height: 150px;
+    width: 500px;
+    /* border: 1px solid black; */
+    
+}
+
+.logo-box-top{
+
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20%;
+    
+}
+
+.title-box-top{
+
+    position: absolute;
+    font-size: 60px;
+    margin-left: 20px;
+    margin-top: 8%;
+    
+    
+}
+
+.login-box-mid{
+
+    height: 200px;
+    width: 500px;
+    /* border: 1px solid black; */
+}
+
+/* form */
+.login {
+	width: 320px;
+	padding: 100px;
+	padding-top: 10px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+    
+}
+
+.login__input {
+	border: none;
+	border-bottom: 3px solid #000000;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+    font-size: large;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__icon {
+	position: absolute;
+	top: 28px;
+    height: 20px;
+    width: 20px;
+}
+/* form */
+
+.login-box-btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    height: 240px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.button-login{
+    
+    border-radius: 215px;
+    height: 50px;
+    width: 250px;
+    font-size: 30px;
+    
+    
+}
+
+.button-login:hover{
+    border: 3px solid rgb(38, 94, 38);
+	/* border-color: #6A679E; */
+	outline: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(20, 17, 17);
+    transition: 0.1s;
+}
+
+.button-login:active{
+    background-color: #264d2c;
+}
+
+@font-face {
+    font-family: honey;
+    src: url(../font/Nice\ Honey.ttf);
+}
+
+* {
+    font-family: honey;
+}

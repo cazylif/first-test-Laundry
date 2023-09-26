@@ -1,0 +1,148 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+  background-image: url(../pic/backgound\ v.2.png);
+  scale: 105% ;
+  /* Add the blur effect */
+  filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  width: 100%;
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  @font-face {
+    font-family: honey;
+    src: url(../font/Nice\ Honey.ttf);
+  }
+  
+  * {
+    font-family: honey;
+  }
+  
+  .singup-box{
+    background-color: rgba(255,255,255, 70%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 600px;
+      width: 500px;
+      /* border: 1px solid black; */
+      border-radius: 80px;
+  }
+  
+  .singup-box-top{
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 500px;
+  }
+  
+  .singup-box-mid{
+    /* border: 1px solid black; */
+    height: 400px;
+    width: 500px;
+  }
+  
+  .singup-box-btm{
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 500px;
+  }
+  
+  .singup-box-top-logo{
+    height: 70px;
+    width: 70px;
+    margin-left: 60px;
+    margin-top: 15px;
+  }
+  
+  .singup-box-top-title{
+    position: absolute;
+    font-size: 70px;
+    margin-top: 15px;
+    margin-left: 7%;
+  
+  }
+  
+  .singup {
+      width: 320px;
+      padding: 100px;
+      padding-top: 10px;
+  }
+  
+  .singup-field {
+      padding: 16px 0px;	
+      position: relative;	
+      
+  }
+  
+  .singup-input {
+      border: none;
+      border-bottom: 3px solid #000000;
+      background: none;
+      padding: 8px;
+      padding-left: 24px;
+      font-weight: 700;
+      width: 75%;
+      transition: .2s;
+    font-size: large;
+  }
+  
+  .singup-input:active,
+  .singup-input:focus,
+  .singup-input:hover {
+      outline: none;
+      border-bottom-color: #6A679E;
+  }
+  
+  .singup-icon{
+      position: absolute;
+      top: 23px;
+    height: 20px;
+    width: 20px;
+  }
+  /* form */
+  
+  .singup-button{
+      
+    border-radius: 215px;
+    height: 50px;
+    width: 250px;
+    font-size: 30px;
+    margin-left: 120px;
+  }
+  
+  .singup-button:hover{
+  border: 3px solid rgb(38, 94, 38);
+  /* border-color: #6A679E; */
+  outline: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgb(20, 17, 17);
+  transition: 0.1s;
+  }
+  
+  .singup-button:active{
+    background-color: #264d2c;
+  }
+  
+  .alert{
+    visibility: hidden;
+    color: red;
+    font-size: large;
+  }
+  
+  
+  
+  
+  
+  
+  
